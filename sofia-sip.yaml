@@ -1,7 +1,7 @@
 Name: sofia-sip
 Summary: Sofia SIP User-Agent library
 Version: 1.12.11
-Release: 1
+Release: 2
 Group: Communications/Telephony and IM
 License: LGPLv2+
 URL: http://sofia-sip.sourceforge.net/
@@ -44,4 +44,5 @@ SubPackages:
     Summary: Sofia-SIP Development Package
     Group: Development/Libraries
     Description: Development package for Sofia SIP UA library.
-Patches: []
+Patches:
+  - 0001-sofia-sip-fix-undefined-behaviour-regression-caused-.patch
