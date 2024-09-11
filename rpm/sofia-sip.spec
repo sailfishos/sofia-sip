@@ -1,7 +1,7 @@
 Name:       sofia-sip
 
 Summary:    Sofia SIP User-Agent library
-Version:    1.13.11
+Version:    1.13.17
 Release:    1
 
 License:    LGPLv2+
@@ -85,26 +85,21 @@ find . -name installdox -delete
 %postun glib -p /sbin/ldconfig
 
 %files
-%defattr(-,root,root,-)
 %license COPYING COPYRIGHTS
 %{_libdir}/libsofia-sip-ua.so.*
 
 %files glib
-%defattr(-,root,root,-)
 %{_libdir}/libsofia-sip-ua-glib.so.*
 
 %files utils
-%defattr(-,root,root,-)
 %{_bindir}/*
 
 %files glib-devel
-%defattr(-,root,root,-)
 %{_includedir}/sofia-sip-*/sofia-sip/su_source.h
 %{_libdir}/libsofia-sip-ua-glib.so
 %{_libdir}/pkgconfig/sofia-sip-ua-glib.pc
 
 %files devel
-%defattr(-,root,root,-)
 %dir %{_includedir}/sofia-sip-*
 %dir %{_includedir}/sofia-sip-*/sofia-sip
 %{_includedir}/sofia-sip-*/sofia-sip/*.h
@@ -115,6 +110,5 @@ find . -name installdox -delete
 %{_datadir}/sofia-sip
 
 %files doc
-%defattr(-,root,root,-)
 %doc AUTHORS ChangeLog ChangeLog.ext-trees
 %doc README README.developers RELEASE TODO
