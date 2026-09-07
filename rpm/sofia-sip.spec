@@ -1,7 +1,7 @@
 Name:       sofia-sip
 
 Summary:    Sofia SIP User-Agent library
-Version:    1.13.17
+Version:    1.13.18
 Release:    1
 
 License:    LGPLv2+
